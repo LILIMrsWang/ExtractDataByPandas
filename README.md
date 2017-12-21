@@ -9,7 +9,7 @@ event 指的是发生日志事件(有7种)
 object 指其他事件
 
 现在需要使用pandas http://pandas.pydata.org  提取特征值
-数据源：log_train.csv文件
+数据源：log_train.csv 网盘文件下载地址：https://pan.baidu.com/s/1hsCMU6S
 
 1. 每个enrollment_id 事件总数；
 2. 每个enrollment_id 开始时间，结束时间，每天活动的数量，平均每天活动的数量（question2.py）
