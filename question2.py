@@ -4,7 +4,7 @@
 import pandas as pd
 import math
 #导入数据
-df=pd.read_csv('log_train.csv',dtype={'time': str},usecols=[0,3],nrows=1000)
+df=pd.read_csv('log_train.csv',dtype={'time': str},usecols=[0,3],nrows=10000)
 #将1000行的记录保存为csv格式文件
 #df.to_csv('dataslice.csv')
 group1 = df.groupby('enrollment_id')
@@ -45,7 +45,10 @@ for i in range(length):
                  countEveryday = 1
                  
 #        print('用户',d.index[i],'活动的天数:',countDays) 
-        s.append(math.ceil(countActivity/countDays))
+        if countDays != 0:
+            s.append(math.ceil(countActivity / countDays))
+        else:
+            s.append(0)
 #        print('用户',d.index[i],'平均每天的活动量:',math.ceil(countActivity/countDays))
     else:
         startTime = df.at[indexs-d.at[d.index[i]],'time']
@@ -69,7 +72,11 @@ for i in range(length):
                  dayStart = df.at[k,'time'][0:10]
                  countEveryday = 1
 #        print('用户',d.index[i],'活动的天数:',countDays)
-        s.append(math.ceil(countActivity/countDays))
+        if countDays != 0:
+            s.append(math.ceil(countActivity / countDays))
+        else:
+            s.append(0)
+
 #        print('用户',d.index[i],'平均每天的活动量:',math.ceil(countActivity/countDays)) 
 
 # print(s)
