@@ -14,11 +14,11 @@ object 指其他事件
 1. 每个enrollment_id 事件总数；（question1.py）
 2. 每个enrollment_id 开始时间，结束时间，每天活动的数量，平均每天活动的数量（question2.py）
 3. 每个enrollment_id problem事件的个数，以及与总事件个数的比值；（question3.py）
-4. 每个enrollment_id video事件的个数，以及与总事件个数的比值；（question4.py）
-5. 每个enrollment_id access事件的个数，以及与总事件个数的比值；（question5.py）
-6. 每个enrollment_id wiki事件的个数，以及与总事件个数的比值；（question6.py）
-7. 每个enrollment_id discussion事件的个数，以及与总事件个数的比值；（question7.py）
-8. 每个enrollment_id navigate事件的个数，以及与总事件个数的比值；（question8.py）
-9. 每个enrollment_id page_close事件的个数，以及与总事件个数的比值；（question9.py）
+4. 每个enrollment_id video事件的个数，以及与总事件个数的比值；question3.py
+5. 每个enrollment_id access事件的个数，以及与总事件个数的比值；question3.py
+6. 每个enrollment_id wiki事件的个数，以及与总事件个数的比值；question3.py
+7. 每个enrollment_id discussion事件的个数，以及与总事件个数的比值；question3.py
+8. 每个enrollment_id navigate事件的个数，以及与总事件个数的比值；question3.py
+9. 每个enrollment_id page_close事件的个数，以及与总事件个数的比值；question3.py
 
 最后，按照提取的特征做成特征矩阵（用numpy）
